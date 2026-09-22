@@ -1,0 +1,13 @@
+{
+  "Example Employer": {
+    "verified_experience": [
+      "Cloud security",
+      "Incident response",
+      "Security automation"
+    ],
+    "constraints": [
+      "Do not invent employers, dates, metrics, certifications, or outcomes.",
+      "Mention a technology only when it is supported by the private source history."
+    ]
+  }
+}
