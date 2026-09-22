@@ -1,28 +1,28 @@
 # Resume Tailoring Agent
 
-Python tool that tailors a private master resume to a target job description with Gemini, using a separate verified employment-history file as the source of truth.
+This tool edits you resume, optimizing your most relevant skills for a particular job description and requirements by using Gemini. It sells you better without making any false information about your employment history and experience. It's using a separate verified employment-history file as the source of truth.
 
 ## Setup
 
 1. Create and activate a virtual environment.
+
+```cmd
+python -m venv .venv
+.venv\Scripts\activate.bat
+```
 2. Install dependencies:
 
-```powershell
+```cmd
 python -m pip install -r requirements.txt
 ```
 
 3. Set one Gemini API key environment variable in your shell:
 
-```powershell
-$env:GEMINI_API_KEY = Read-Host "Gemini API key"
+```cmd
+set /p GEMINI_API_KEY=Gemini API key: 
 ```
 
-4. Copy the private input templates:
-
-```powershell
-Copy-Item employment_history.example.json employment_history.json
-Copy-Item job_input.example.txt job_input.txt
-```
+4. Edit the employment_history.json template.
 
 5. Place your private `master_resume.docx` in the project folder.
 
@@ -30,7 +30,7 @@ Copy-Item job_input.example.txt job_input.txt
 
 ## Run
 
-```powershell
+```cmd
 python main.py
 ```
 
