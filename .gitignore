@@ -1,0 +1,23 @@
+.venv/
+__pycache__/
+*.py[cod]
+
+.env
+.env.*
+!.env.example
+*api*key*.txt
+*token*.txt
+*secret*.txt
+google studio api key.txt
+
+# Private resume inputs and generated application artifacts
+*.docx
+*.pdf
+job_input.txt
+employment_history.json
+tailoring_report_*.txt
+tailoring_report*.txt
+tailored_resume_*
+Tailored_Resume.*
+Resume_*
+main_good_backup.py
