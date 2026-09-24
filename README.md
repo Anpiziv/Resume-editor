@@ -22,11 +22,13 @@ python -m pip install -r requirements.txt
 set /p GEMINI_API_KEY=Gemini API key: 
 ```
 
-4. Edit the employment_history.json template.
+4. Add an employment_history.json template (see "employment_history_example.json" file).
 
-5. Place your private `master_resume.docx` in the project folder.
+5. Add a job_input.txt file (used in case the job description scraping fails) 
 
-6. Edit `gemini_system_prompt.txt` if you want to adjust the Gemini writing rules without changing Python code.
+6. Place your private `master_resume.docx` in the project folder.
+
+7. Edit `gemini_system_prompt.txt` if you want to adjust the Gemini writing rules without changing Python code.
 
 ## Run
 
